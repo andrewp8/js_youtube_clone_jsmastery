@@ -24,13 +24,18 @@ const Sidebar = () => (
 				key={category.name}
 			>
 				<span
+					// icons will be red because of the tenary condition, but on hover, the css set it to white using !important
 					style={{
-						color: cattegory.name === selectedCategory ? "white" : "red",
+						color: category.name === selectedCategory ? "white" : "red",
 					}}
 				>
 					{category.icon}
 				</span>
-				<span>{category.name}</span>
+				<span
+					style={{ opacity: category.name === selectedCategory ? "1" : "0.8" }}
+				>
+					{category.name}
+				</span>
 			</button>
 		))}
 	</Stack>
