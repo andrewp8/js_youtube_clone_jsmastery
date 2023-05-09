@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
 
 //* import from /components/index.js as a shortcut and robust way to import a multiple components from the same folder
-import { Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed } from './components'
+import { Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed } from './components';
 
 const App = () => (
   <BrowserRouter>
